@@ -9,9 +9,10 @@ def silly_sum():
     """
     sum = 0
     user_num = input("Please enter a number: ")
+    sum += int(user_num)
 
-    while user_num != 0 or sum < 1000:
-        sum += user_num
+    while int(user_num) != 0 and sum < 1000:
+        sum += int(user_num)
         user_num = input("Please enter the next number: ")
 
     return sum
